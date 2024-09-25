@@ -1,0 +1,731 @@
+size = 0x100
+skt_id = 0x0
+PCIE_RAS_ENABLE: 0x0    PCIE_RAS_THRESHOLD: 0x0
+PEU0_5 BIF_MODE: 0x1    PEU0_3 BIF_MODE: 0x1    PXU0_5 BIF_MODE: 0x1    PEU1_5 BIF_MODE: 0x1    PEU1_3 BIF_MODE: 0x1
+PEU0_5 SSC_EN: 0x0      PEU0_3 SSC_EN: 0x0      PXU0_5 SSC_EN: 0x0      PEU1_5 SSC_EN: 0x0      PEU1_3 SSC_EN: 0x0
+C0 speed:0x5    preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0x0        pre:0x0 main:0x0        post:0x0
+C1 speed:0x5    preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0x1        pre:0x0 main:0x0        post:0x0
+C2 speed:0x5    preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0x2        pre:0x0 main:0x0        post:0x0
+C3 speed:0x5    preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0x3        pre:0x0 main:0x0        post:0x0
+C4 speed:0x5    preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0x5        pre:0x0 main:0x0        post:0x0
+C5 speed:0x5    preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0x6        pre:0x0 main:0x0        post:0x0
+C6 speed:0x5    preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0x7        pre:0x0 main:0x0        post:0x0
+C7 speed:0x5    preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0x8        pre:0x0 main:0x0        post:0x0
+C8 speed:0x5    preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0x9        pre:0x0 main:0x0        post:0x0
+C9 speed:0x5    preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0xa        pre:0x0 main:0x0        post:0x0
+C10 speed:0x5   preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0xb        pre:0x0 main:0x0        post:0x0
+C11 speed:0x5   preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0xc        pre:0x0 main:0x0        post:0x0
+C12 speed:0x3   preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0x4        pre:0x0 main:0x0        post:0x0
+C13 speed:0x3   preset:0x0      ari:0x0 aer:0x0 hp:0x0  aspm:0x0        mps:0x0 mrrs:0x0        slot:0xd        pre:0x0 main:0x0        post:0x0
+===============config SKT0 pcie start================
+test width(0:x1, 1:x2, 2:x4, 3:x8, 4:x16)[4]: 
+==================================SKT0 PCIE BIF MODE CFG
+PCIE0 bif_mode : 0x0
+PCIE1 bif_mode : 0x0
+PCIE2 bif_mode : 0x0
+choose pcie module(0:PEU0_5,1:PXU0,2:PEU1_5,3:PEU0_3,4:PEU1_3,5:close peu05/3,6:close pxu0,7:close peu1_5,8:all open)[0]: 
+PEU0_5 bif_mod:0x770
+============================Config SKT0 PCIE0 5.0.
+==================================================comn_config.
+PIO_reorder:0x1
+DMA_reorder:0x0
+INTx config:0xf
+5.0 device id:0x80000000
+3.0 device id:0x4
+lane_count:0x2234
+please choose the speed(0:GEN1~4:GEN5):[4]: 
+speed:0x4444
+======================================================PHY CFG.
+APB reset release config : 0x1
+        sram init done:61004013
+PIPE reset release config : 0x1
+        UC self reset and stall:0x4001
+        RC PHY CFG uc is enabled:0x4002
+        UC init completed
+PHY reset release config : 0x1
+        US PHY status are deasserted
+Controller reset release config : 0x1
+=====================================================CTRL CFG.
+disable c0 sris(0:disable) : 0x0
+axi_slave tag(0xff):0xff
+RC bar(0xf00000):0xf00000
+address = 0x32031000
+        Type0 CFG space
+disable rcrb(0x1):0x1
+INTXR(0x1):0x1
+config link down timer:0x32 0x8
+physical slot number:0x0
+mps(0:128 1:256 2:512):0x0
+mrrs(0:128 1:256 2:512):0x2
+gen5 preset(0x95)[0x95]: 
+gen3 preset:0x44774477
+gen4 preset:0x47474747
+gen5 preset:0x95959595
+link training:0x1.
+C0 speed(0:GEN1~4:GEN5):0x3,  width(0:X1~4:X16):0x2
+C1 speed(0:GEN1~4:GEN5):0x0,  width(0:X1~4:X16):0x3
+C2 speed(0:GEN1~4:GEN5):0x0,  width(0:X1~4:X16):0x2
+C3 speed(0:GEN1~4:GEN5):0x0,  width(0:X1~4:X16):0x2
+C0 ltssm(L0:0x10):0x29
+C1 ltssm(L0:0x10):0x0
+C2 ltssm(L0:0x10):0x0
+C3 ltssm(L0:0x10):0x0
+PXU0 non-existence!
+PEU1_5 PEU1_3 non-existence!
+PEU0_3 non-existence!
+PEU1_3 non-existence!
+******************read lane coefs
+lane0 0x10198:0xd5f00   c-1:0x3 c0:0x15 c+1:0x0 margin&swing:0x0
+lane1 0x10198:0xd5f00   c-1:0x3 c0:0x15 c+1:0x0 margin&swing:0x0
+lane2 0x10198:0x125a00  c-1:0x4 c0:0x14 c+1:0x0 margin&swing:0x0
+lane3 0x10198:0x96300   c-1:0x2 c0:0x16 c+1:0x0 margin&swing:0x0
+get ltssm state track?(1:yes, 0:no, 0default)[0]: 1
+!!please choose a pcie module according to the existing pcie module in the skt!!
+please choose which pcie module(0:PEU0,1:PXU0,2:PEU1,0default)[0]: 
+please choose which controller you want to see(0:C0~3:C3,0default)[0]: 
+***current speed:GEN5,  width:X4
+***current ltssm state(L0:0x10):0x10
+group0 ltssm state track is:0x5040201
+group1 ltssm state track is:0x9070806
+group2 ltssm state track is:0xd0b100a
+group3 ltssm state track is:0x2a290b0c
+group4 ltssm state track is:0xe0d0b2b
+group5 ltssm state track is:0xc0d0b10
+group6 ltssm state track is:0x2b2a290b
+group7 ltssm state track is:0x100e0d0b
+group8 ltssm state track is:0xb0c0d0b
+group9 ltssm state track is:0xb2b2a29
+group10 ltssm state track is:0x100e0d
+group11 ltssm state track is:0x0
+group12 ltssm state track is:0x0
+group13 ltssm state track is:0x0
+group14 ltssm state track is:0x0
+group15 ltssm state track is:0x0
+previous state:0, current state:2, trans cause:0x3, current speed:0x0, nego lane count:0x4
+previous state:2, current state:3, trans cause:0x0, current speed:0x0, nego lane count:0x4
+previous state:3, current state:4, trans cause:0x1, current speed:0x0, nego lane count:0x4
+previous state:4, current state:5, trans cause:0x0, current speed:0x0, nego lane count:0x4
+previous state:5, current state:6, trans cause:0x0, current speed:0x0, nego lane count:0x4
+previous state:6, current state:7, trans cause:0x0, current speed:0x0, nego lane count:0x4
+previous state:7, current state:8, trans cause:0x0, current speed:0x0, nego lane count:0x4
+previous state:8, current state:9, trans cause:0x2, current speed:0x0, nego lane count:0x4
+previous state:9, current state:14, trans cause:0x5, current speed:0x0, nego lane count:0x4
+previous state:14, current state:15, trans cause:0x0, current speed:0x0, nego lane count:0x4
+previous state:15, current state:16, trans cause:0x0, current speed:0x0, nego lane count:0x4
+previous state:16, current state:17, trans cause:0x0, current speed:0x0, nego lane count:0x4
+previous state:17, current state:18, trans cause:0x4, current speed:0x0, nego lane count:0x4
+previous state:18, current state:19, trans cause:0x6, current speed:0x0, nego lane count:0x4
+previous state:19, current state:20, trans cause:0x2, current speed:0x0, nego lane count:0x4
+previous state:20, current state:21, trans cause:0x0, current speed:0x0, nego lane count:0x4
+previous state:21, current state:22, trans cause:0x0, current speed:0x0, nego lane count:0x4
+previous state:22, current state:23, trans cause:0x2, current speed:0x0, nego lane count:0x4
+previous state:23, current state:33, trans cause:0x3, current speed:0x0, nego lane count:0x4
+previous state:33, current state:34, trans cause:0x0, current speed:0x0, nego lane count:0x4
+previous state:34, current state:35, trans cause:0x3, current speed:0x0, nego lane count:0x4
+previous state:35, current state:36, trans cause:0x4, current speed:0x0, nego lane count:0x2
+previous state:36, current state:37, trans cause:0x0, current speed:0x0, nego lane count:0x2
+previous state:37, current state:41, trans cause:0x0, current speed:0x0, nego lane count:0x2
+previous state:41, current state:42, trans cause:0x9, current speed:0x0, nego lane count:0x2
+previous state:43, current state:44, trans cause:0x1, current speed:0x0, nego lane count:0x2
+previous state:45, current state:74, trans cause:0x0, current speed:0x0, nego lane count:0x2
+previous state:74, current state:75, trans cause:0x0, current speed:0x0, nego lane count:0x2
+previous state:75, current state:76, trans cause:0x0, current speed:0x0, nego lane count:0x2
+previous state:76, current state:77, trans cause:0x0, current speed:0x0, nego lane count:0x2
+previous state:77, current state:42, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:42, current state:122, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:122, current state:123, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:123, current state:126, trans cause:0x7, current speed:0x2, nego lane count:0x2
+previous state:126, current state:127, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:127, current state:126, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:126, current state:127, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:127, current state:126, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:126, current state:127, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:127, current state:126, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:126, current state:127, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:127, current state:126, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:126, current state:127, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:127, current state:126, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:126, current state:124, trans cause:0x3, current speed:0x2, nego lane count:0x2
+previous state:124, current state:125, trans cause:0x3, current speed:0x2, nego lane count:0x2
+previous state:125, current state:124, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:124, current state:42, trans cause:0x2, current speed:0x2, nego lane count:0x2
+previous state:43, current state:44, trans cause:0x1, current speed:0x2, nego lane count:0x2
+previous state:45, current state:46, trans cause:0x2, current speed:0x2, nego lane count:0x2
+previous state:46, current state:47, trans cause:0x8, current speed:0x2, nego lane count:0x2
+previous state:47, current state:41, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:41, current state:42, trans cause:0x9, current speed:0x2, nego lane count:0x2
+previous state:43, current state:44, trans cause:0x1, current speed:0x2, nego lane count:0x2
+previous state:45, current state:74, trans cause:0x1, current speed:0x2, nego lane count:0x2
+previous state:74, current state:75, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:75, current state:76, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:76, current state:77, trans cause:0x0, current speed:0x2, nego lane count:0x2
+previous state:77, current state:42, trans cause:0x0, current speed:0x3, nego lane count:0x2
+previous state:42, current state:122, trans cause:0x0, current speed:0x3, nego lane count:0x2
+previous state:122, current state:123, trans cause:0x0, current speed:0x3, nego lane count:0x2
+previous state:123, current state:126, trans cause:0x7, current speed:0x3, nego lane count:0x2
+previous state:126, current state:127, trans cause:0x0, current speed:0x3, nego lane count:0x2
+previous state:127, current state:126, trans cause:0x0, current speed:0x3, nego lane count:0x2
+clear transition cause!
+previous state:0, current state:2, trans cause:0x3, current speed:0x0, nego lane count:0x4
+enter this state count is:0x1
+TS1 count:0x0
+TS2 count:0xe
+ltssm internal state0:0x0
+ltssm internal state1:0x9
+ltssm internal state2:0x800
+ltssm internal state3:0x7ff82
+ltssm internal state4:0x0
+ltssm internal state5:0x0
+clear?(0:no, 1:yes)[1]: 1
+how many times[2]: 2
+delay times(s)[5]: 1
+group0 ltssm state track is:0x0
+group1 ltssm state track is:0x0
+group2 ltssm state track is:0x0
+group3 ltssm state track is:0x0
+group4 ltssm state track is:0x0
+group5 ltssm state track is:0x0
+group6 ltssm state track is:0x0
+group7 ltssm state track is:0x0
+group8 ltssm state track is:0x0
+group9 ltssm state track is:0x0
+group10 ltssm state track is:0x0
+group11 ltssm state track is:0x0
+group12 ltssm state track is:0x0
+group13 ltssm state track is:0x0
+group14 ltssm state track is:0x0
+group15 ltssm state track is:0x0
+group0 ltssm state track is:0x0
+group1 ltssm state track is:0x0
+group2 ltssm state track is:0x0
+group3 ltssm state track is:0x0
+group4 ltssm state track is:0x0
+group5 ltssm state track is:0x0
+group6 ltssm state track is:0x0
+group7 ltssm state track is:0x0
+group8 ltssm state track is:0x0
+group9 ltssm state track is:0x0
+group10 ltssm state track is:0x0
+group11 ltssm state track is:0x0
+group12 ltssm state track is:0x0
+group13 ltssm state track is:0x0
+group14 ltssm state track is:0x0
+group15 ltssm state track is:0x0
+again?(0:no, 1:yes)[1]: 0
+choose again(1)? or quit(0,default)?[0]: 0
+print all or just histogram(0:all, 1:hist)[1]: 1
+$$$$$$$$$$$$$$$$$$$$$$$$$print eye info$$$$$$$$$$$$$$$$$$$$$$$$$$.
+******************read lane histogram_data2
+lane0 histogram_data2 value is:0x124
+lane0 histogram_data2 value is:0x2cd
+lane0 histogram_data2 value is:0x5ff
+lane0 histogram_data2 value is:0xc29
+lane0 histogram_data2 value is:0x180f
+lane0 histogram_data2 value is:0x27b5
+lane0 histogram_data2 value is:0x3f25
+lane0 histogram_data2 value is:0x5c70
+lane0 histogram_data2 value is:0x7d5b
+lane0 histogram_data2 value is:0x9f43
+lane0 histogram_data2 value is:0xbf9e
+lane0 histogram_data2 value is:0xd769
+lane0 histogram_data2 value is:0xdf60
+lane0 histogram_data2 value is:0xd4e1
+lane0 histogram_data2 value is:0xbebe
+lane0 histogram_data2 value is:0x992b
+lane0 histogram_data2 value is:0x6f27
+lane0 histogram_data2 value is:0x4c19
+lane0 histogram_data2 value is:0x33be
+lane0 histogram_data2 value is:0x2305
+lane0 histogram_data2 value is:0x168e
+lane0 histogram_data2 value is:0xea0
+lane0 histogram_data2 value is:0x8ce
+lane0 histogram_data2 value is:0x4fe
+lane0 histogram_data2 value is:0x2e5
+lane0 histogram_data2 value is:0x1ec
+lane0 histogram_data2 value is:0x12b
+lane0 histogram_data2 value is:0xb7
+lane0 histogram_data2 value is:0x90
+lane0 histogram_data2 value is:0x84
+lane0 histogram_data2 value is:0x54
+lane0 histogram_data2 value is:0x53
+lane0 histogram_data2 value is:0x35
+lane0 histogram_data2 value is:0x26
+lane0 histogram_data2 value is:0x13
+lane0 histogram_data2 value is:0xa
+lane0 histogram_data2 value is:0x3
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x0
+lane0 histogram_data2 value is:0x1
+lane0 histogram_data2 value is:0x5
+lane0 histogram_data2 value is:0x7
+lane0 histogram_data2 value is:0x8
+lane0 histogram_data2 value is:0x20
+lane0 histogram_data2 value is:0x6d
+lane0 histogram_data2 value is:0xc6
+lane0 histogram_data2 value is:0x174
+lane0 histogram_data2 value is:0x247
+lane0 histogram_data2 value is:0x37a
+lane0 histogram_data2 value is:0x559
+lane0 histogram_data2 value is:0x802
+lane0 histogram_data2 value is:0xd1c
+lane0 histogram_data2 value is:0x1495
+lane0 histogram_data2 value is:0x20f7
+lane0 histogram_data2 value is:0x34e8
+lane0 histogram_data2 value is:0x4f3f
+lane0 histogram_data2 value is:0x6f28
+lane0 histogram_data2 value is:0x8fce
+lane0 histogram_data2 value is:0xafa3
+lane0 histogram_data2 value is:0xcac2
+lane0 histogram_data2 value is:0xd98c
+lane0 histogram_data2 value is:0xdb48
+lane0 histogram_data2 value is:0xca16
+lane0 histogram_data2 value is:0xab2e
+lane0 histogram_data2 value is:0x84f8
+lane0 histogram_data2 value is:0x60d1
+lane0 histogram_data2 value is:0x4143
+lane0 histogram_data2 value is:0x2a23
+lane0 histogram_data2 value is:0x1736
+lane0 histogram_data2 value is:0xd0e
+lane0 histogram_data2 value is:0x655
+lane0 histogram_data2 value is:0x2b9
+lane0 histogram_data2 value is:0x127
+lane0 histogram_data2 value is:0x6c
+lane0 histogram_data2 value is:0x25
+lane0 histogram_data2 value is:0x1a
+lane0 histogram_data2 value is:0x3
+lane0 histogram_data2 value is:0x40
+lane0 histogram_data2 value is:0xb
+lane0 histogram_data2 value is:0x2c05
+lane0 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0xdd
+lane1 histogram_data2 value is:0x24b
+lane1 histogram_data2 value is:0x552
+lane1 histogram_data2 value is:0xbe9
+lane1 histogram_data2 value is:0x1784
+lane1 histogram_data2 value is:0x2a0f
+lane1 histogram_data2 value is:0x44a4
+lane1 histogram_data2 value is:0x624d
+lane1 histogram_data2 value is:0x86d5
+lane1 histogram_data2 value is:0xa9fb
+lane1 histogram_data2 value is:0xc515
+lane1 histogram_data2 value is:0xd22c
+lane1 histogram_data2 value is:0xd123
+lane1 histogram_data2 value is:0xc2e1
+lane1 histogram_data2 value is:0xaa8a
+lane1 histogram_data2 value is:0x8868
+lane1 histogram_data2 value is:0x6b10
+lane1 histogram_data2 value is:0x4cca
+lane1 histogram_data2 value is:0x36a9
+lane1 histogram_data2 value is:0x23a4
+lane1 histogram_data2 value is:0x18a4
+lane1 histogram_data2 value is:0x1174
+lane1 histogram_data2 value is:0xce4
+lane1 histogram_data2 value is:0xa68
+lane1 histogram_data2 value is:0x82b
+lane1 histogram_data2 value is:0x65e
+lane1 histogram_data2 value is:0x4d5
+lane1 histogram_data2 value is:0x37f
+lane1 histogram_data2 value is:0x273
+lane1 histogram_data2 value is:0x228
+lane1 histogram_data2 value is:0x18f
+lane1 histogram_data2 value is:0x12d
+lane1 histogram_data2 value is:0xee
+lane1 histogram_data2 value is:0x7f
+lane1 histogram_data2 value is:0x4b
+lane1 histogram_data2 value is:0x25
+lane1 histogram_data2 value is:0xc
+lane1 histogram_data2 value is:0x1
+lane1 histogram_data2 value is:0x1
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x0
+lane1 histogram_data2 value is:0x2
+lane1 histogram_data2 value is:0x3
+lane1 histogram_data2 value is:0x6
+lane1 histogram_data2 value is:0x1b
+lane1 histogram_data2 value is:0x2d
+lane1 histogram_data2 value is:0x4c
+lane1 histogram_data2 value is:0xa0
+lane1 histogram_data2 value is:0xe6
+lane1 histogram_data2 value is:0x152
+lane1 histogram_data2 value is:0x1da
+lane1 histogram_data2 value is:0x2e0
+lane1 histogram_data2 value is:0x4da
+lane1 histogram_data2 value is:0x7f5
+lane1 histogram_data2 value is:0xc5c
+lane1 histogram_data2 value is:0x13d4
+lane1 histogram_data2 value is:0x1ca1
+lane1 histogram_data2 value is:0x294c
+lane1 histogram_data2 value is:0x3dd4
+lane1 histogram_data2 value is:0x58a6
+lane1 histogram_data2 value is:0x740b
+lane1 histogram_data2 value is:0x8eb7
+lane1 histogram_data2 value is:0xa7e9
+lane1 histogram_data2 value is:0xb8b4
+lane1 histogram_data2 value is:0xc545
+lane1 histogram_data2 value is:0xc7f7
+lane1 histogram_data2 value is:0xb900
+lane1 histogram_data2 value is:0xa004
+lane1 histogram_data2 value is:0x8035
+lane1 histogram_data2 value is:0x62ba
+lane1 histogram_data2 value is:0x48e2
+lane1 histogram_data2 value is:0x311d
+lane1 histogram_data2 value is:0x2001
+lane1 histogram_data2 value is:0x1349
+lane1 histogram_data2 value is:0xb4e
+lane1 histogram_data2 value is:0x5b8
+lane1 histogram_data2 value is:0x264
+lane1 histogram_data2 value is:0xdb
+lane1 histogram_data2 value is:0x4a
+lane1 histogram_data2 value is:0x1e
+lane1 histogram_data2 value is:0x4
+lane1 histogram_data2 value is:0x3c
+lane1 histogram_data2 value is:0xb
+lane1 histogram_data2 value is:0x2c05
+lane1 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x12b
+lane2 histogram_data2 value is:0x28d
+lane2 histogram_data2 value is:0x588
+lane2 histogram_data2 value is:0xb0d
+lane2 histogram_data2 value is:0x13ee
+lane2 histogram_data2 value is:0x2461
+lane2 histogram_data2 value is:0x3cb1
+lane2 histogram_data2 value is:0x5c3c
+lane2 histogram_data2 value is:0x84a5
+lane2 histogram_data2 value is:0xad40
+lane2 histogram_data2 value is:0xcd4a
+lane2 histogram_data2 value is:0xdf68
+lane2 histogram_data2 value is:0xddb9
+lane2 histogram_data2 value is:0xcd58
+lane2 histogram_data2 value is:0xae81
+lane2 histogram_data2 value is:0x8994
+lane2 histogram_data2 value is:0x6688
+lane2 histogram_data2 value is:0x4a70
+lane2 histogram_data2 value is:0x3428
+lane2 histogram_data2 value is:0x23a9
+lane2 histogram_data2 value is:0x1900
+lane2 histogram_data2 value is:0x113d
+lane2 histogram_data2 value is:0xc0c
+lane2 histogram_data2 value is:0x87e
+lane2 histogram_data2 value is:0x5cf
+lane2 histogram_data2 value is:0x3ea
+lane2 histogram_data2 value is:0x26a
+lane2 histogram_data2 value is:0x17d
+lane2 histogram_data2 value is:0xe3
+lane2 histogram_data2 value is:0x8b
+lane2 histogram_data2 value is:0x51
+lane2 histogram_data2 value is:0x25
+lane2 histogram_data2 value is:0x18
+lane2 histogram_data2 value is:0x2f
+lane2 histogram_data2 value is:0x30
+lane2 histogram_data2 value is:0x2f
+lane2 histogram_data2 value is:0x29
+lane2 histogram_data2 value is:0x11
+lane2 histogram_data2 value is:0x8
+lane2 histogram_data2 value is:0x5
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x1
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x1
+lane2 histogram_data2 value is:0xa
+lane2 histogram_data2 value is:0xd
+lane2 histogram_data2 value is:0x1b
+lane2 histogram_data2 value is:0x2d
+lane2 histogram_data2 value is:0x58
+lane2 histogram_data2 value is:0xab
+lane2 histogram_data2 value is:0x121
+lane2 histogram_data2 value is:0x238
+lane2 histogram_data2 value is:0x355
+lane2 histogram_data2 value is:0x56b
+lane2 histogram_data2 value is:0x93d
+lane2 histogram_data2 value is:0xdcf
+lane2 histogram_data2 value is:0x162b
+lane2 histogram_data2 value is:0x228e
+lane2 histogram_data2 value is:0x34fb
+lane2 histogram_data2 value is:0x4f38
+lane2 histogram_data2 value is:0x6f6f
+lane2 histogram_data2 value is:0x9279
+lane2 histogram_data2 value is:0xad41
+lane2 histogram_data2 value is:0xc64b
+lane2 histogram_data2 value is:0xd4eb
+lane2 histogram_data2 value is:0xd588
+lane2 histogram_data2 value is:0xc4be
+lane2 histogram_data2 value is:0xab91
+lane2 histogram_data2 value is:0x881b
+lane2 histogram_data2 value is:0x650d
+lane2 histogram_data2 value is:0x44be
+lane2 histogram_data2 value is:0x2a3e
+lane2 histogram_data2 value is:0x185a
+lane2 histogram_data2 value is:0xd74
+lane2 histogram_data2 value is:0x70f
+lane2 histogram_data2 value is:0x374
+lane2 histogram_data2 value is:0x17c
+lane2 histogram_data2 value is:0x82
+lane2 histogram_data2 value is:0x2e
+lane2 histogram_data2 value is:0xd
+lane2 histogram_data2 value is:0x0
+lane2 histogram_data2 value is:0x3c
+lane2 histogram_data2 value is:0xb
+lane2 histogram_data2 value is:0x2c05
+lane2 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x4d
+lane3 histogram_data2 value is:0xec
+lane3 histogram_data2 value is:0x2cc
+lane3 histogram_data2 value is:0x709
+lane3 histogram_data2 value is:0x1065
+lane3 histogram_data2 value is:0x2140
+lane3 histogram_data2 value is:0x393a
+lane3 histogram_data2 value is:0x5bfe
+lane3 histogram_data2 value is:0x8541
+lane3 histogram_data2 value is:0xaf7b
+lane3 histogram_data2 value is:0xd547
+lane3 histogram_data2 value is:0xea4f
+lane3 histogram_data2 value is:0xead6
+lane3 histogram_data2 value is:0xd25d
+lane3 histogram_data2 value is:0xaaa2
+lane3 histogram_data2 value is:0x8267
+lane3 histogram_data2 value is:0x6175
+lane3 histogram_data2 value is:0x47c3
+lane3 histogram_data2 value is:0x33b8
+lane3 histogram_data2 value is:0x2402
+lane3 histogram_data2 value is:0x1aef
+lane3 histogram_data2 value is:0x11ae
+lane3 histogram_data2 value is:0xbb9
+lane3 histogram_data2 value is:0x7ee
+lane3 histogram_data2 value is:0x510
+lane3 histogram_data2 value is:0x368
+lane3 histogram_data2 value is:0x233
+lane3 histogram_data2 value is:0x14c
+lane3 histogram_data2 value is:0xc6
+lane3 histogram_data2 value is:0x6b
+lane3 histogram_data2 value is:0x4f
+lane3 histogram_data2 value is:0x2b
+lane3 histogram_data2 value is:0xa
+lane3 histogram_data2 value is:0x5
+lane3 histogram_data2 value is:0x3
+lane3 histogram_data2 value is:0x2
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x1
+lane3 histogram_data2 value is:0x4
+lane3 histogram_data2 value is:0x8
+lane3 histogram_data2 value is:0xc
+lane3 histogram_data2 value is:0x20
+lane3 histogram_data2 value is:0x4d
+lane3 histogram_data2 value is:0x93
+lane3 histogram_data2 value is:0xd0
+lane3 histogram_data2 value is:0x17f
+lane3 histogram_data2 value is:0x2a9
+lane3 histogram_data2 value is:0x477
+lane3 histogram_data2 value is:0x692
+lane3 histogram_data2 value is:0x9fc
+lane3 histogram_data2 value is:0xf2c
+lane3 histogram_data2 value is:0x15e0
+lane3 histogram_data2 value is:0x20c4
+lane3 histogram_data2 value is:0x326b
+lane3 histogram_data2 value is:0x4be0
+lane3 histogram_data2 value is:0x6b65
+lane3 histogram_data2 value is:0x8d4d
+lane3 histogram_data2 value is:0xb1b0
+lane3 histogram_data2 value is:0xcb21
+lane3 histogram_data2 value is:0xd8b1
+lane3 histogram_data2 value is:0xd81e
+lane3 histogram_data2 value is:0xc6e7
+lane3 histogram_data2 value is:0xa9e8
+lane3 histogram_data2 value is:0x89cc
+lane3 histogram_data2 value is:0x63c1
+lane3 histogram_data2 value is:0x44be
+lane3 histogram_data2 value is:0x2adc
+lane3 histogram_data2 value is:0x18b8
+lane3 histogram_data2 value is:0xc39
+lane3 histogram_data2 value is:0x568
+lane3 histogram_data2 value is:0x205
+lane3 histogram_data2 value is:0xa3
+lane3 histogram_data2 value is:0x22
+lane3 histogram_data2 value is:0x5
+lane3 histogram_data2 value is:0x1
+lane3 histogram_data2 value is:0x0
+lane3 histogram_data2 value is:0x38
+lane3 histogram_data2 value is:0xb
+lane3 histogram_data2 value is:0x2c05
+lane3 histogram_data2 value is:0x0
+power(1:poweroff,2:reset):[0]:

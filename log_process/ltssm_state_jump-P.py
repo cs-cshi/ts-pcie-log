@@ -328,12 +328,16 @@ def extract_ltssm_info(log_path, start_str, end_str):
 
         if sub_0x10198:
             for item in sub_0x10198:
-                sheet.cell(row=excel_row, column=excel_column, value=item)
-                excel_row += 1
-
-            for i in range(1):
-                sheet.cell(row=excel_row, column=excel_column, value=" ")
-                excel_row += 1
+                split_info = extract_lane_coefs(item)
+                for key1, value1 in split_info.items():
+                    sheet.cell(row=excel_row, column=excel_column, value=key1)
+                    excel_row += 1
+                    for key2, value2 in value1.items():
+                        sheet.cell(row=excel_row, column=excel_column, value=f"{key2}: {value2}")
+                        excel_row += 1
+                for i in range(1):
+                    sheet.cell(row=excel_row, column=excel_column, value=" ")
+                    excel_row += 1
 
         if sub_ltssm_group:
             for item in sub_ltssm_group:
@@ -554,7 +558,6 @@ def determine_ltssm_stable(ltssm_trace):
     return recovery_state_times
 
 
-
 def fill_cell(sheet, cell_row, cell_column, cell_value, nums):
     """
     :param sheet:
@@ -568,6 +571,19 @@ def fill_cell(sheet, cell_row, cell_column, cell_value, nums):
         sheet.cell(row=cell_row, column=cell_column, value=cell_value)
 
 
+def extract_lane_coefs(info_str):
+    print(info_str)
+    parts = info_str.split()
+    result = {parts[0]: {}}
+
+    for part in parts[1:]:
+        key, value = part.split(":")
+        result[parts[0]][key] = value
+
+    # print(result)
+    return result
+
+
 def test():
     begin_str = "skt_id = 0x0"
     end_str = "power(1:poweroff,2:reset):"
@@ -577,7 +593,7 @@ def test():
 
     # 指定目录
     # directory_path = r'E:\files\phytium\TS\log\20240829\nic-er_90v'
-    directory_path = r'C:\Users\46439\Documents\20240918\PCIE'
+    directory_path = r'..\log'
     # 获取目录中的所有文件
     files = [os.path.join(directory_path, file) for file in os.listdir(directory_path) if
              os.path.isfile(os.path.join(directory_path, file))]
